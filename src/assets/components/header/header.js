@@ -1,11 +1,18 @@
 import React from 'react';
 
-function header(props) {
+function Header(props) {
     return (
-        <div>
-            
-        </div>
+        <React.Fragment>
+            <div className="banner">
+                <div className="banner-image">
+                    <img src="../../images/logo.PNG" alt="banner picture"/>
+                </div>
+                <div className="banner-text">
+                    Sleepora Mattresses
+                </div>
+            </div>
+        </React.Fragment>
     );
 }
 
-export default header;
+export default Header;
