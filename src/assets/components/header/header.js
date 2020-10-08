@@ -15,23 +15,23 @@ function Header(props) {
                 </div>
             </div>
 
-            {/* <div className="link-wrapper">
+            <div className="link-wrapper">
                 <div clasclassName="index menu-item active-link">
                     <Link to="/">Home</Link>
                 </div>
                 <div className="catalog menu-item">
-                    <Link to="/Catalog">Catalog</Link>
+                    <Link to="/catalog">Catalog</Link>
                 </div>
                 <div className="gallery menu-item">
-                    <Link to="/Gallery">Gallery</Link>
+                    <Link to="/gallery">Gallery</Link>
                 </div>
                 <div className="about menu-item">
-                    <Link to="/AboutUs">Our Story</Link>
+                    <Link to="/about">Our Story</Link>
                 </div>
                 <div className="contact menu-item">
-                    <Link to="/ContactUs">Contact Us</Link>
+                    <Link to="/contact">Contact Us</Link>
                 </div>
-            </div> */}
+            </div>
         </React.Fragment>
     );
 }
