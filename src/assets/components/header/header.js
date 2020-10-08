@@ -28,9 +28,6 @@ function Header(props) {
                 <div className="about menu-item">
                     <Link to="/about">Our Story</Link>
                 </div>
-                <div className="contact menu-item">
-                    <Link to="/contact">Contact Us</Link>
-                </div>
             </div>
         </React.Fragment>
     );

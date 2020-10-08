@@ -19,3 +19,17 @@
   align-items: center;
   padding: 7% 0% 7% 0%;
   font-weight: normal; }
+
+.link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 10%; }
+  .link-wrapper div {
+    margin: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    height: 22px; }
+  .link-wrapper div a {
+    color: #696969;
+    text-decoration: none;
+    transition: color 0.2s; }
