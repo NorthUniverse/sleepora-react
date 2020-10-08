@@ -1,5 +1,4 @@
 import React from 'react';
-import './assets/styles/minCss/header.css';
 import './App.css';
 import Header from './assets/components/header/header';
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../images/logo.PNG';
+import '../../styles/minCss/header.css';
 
 function Header(props) {
     return (
