@@ -29,7 +29,11 @@
     font-size: 1.2em;
     text-transform: uppercase;
     height: 22px; }
+    .link-wrapper divhover {
+      border-bottom: 2px solid black; }
   .link-wrapper div a {
     color: #696969;
     text-decoration: none;
     transition: color 0.2s; }
+  .link-wrapper .contact {
+    display: none; }

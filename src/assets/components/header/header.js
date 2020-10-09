@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logo.PNG';
 import '../../styles/minCss/header.css';
 
-function Header(props) {
+function Header() {
     return (
         <React.Fragment>
             <div className="banner">
@@ -27,6 +27,9 @@ function Header(props) {
                 </div>
                 <div className="about menu-item">
                     <Link to="/about">Our Story</Link>
+                </div>
+                <div className="contact menu-item">
+                    <Link to="/contact">Contact Us</Link>
                 </div>
             </div>
         </React.Fragment>

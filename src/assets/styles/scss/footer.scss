@@ -1,0 +1,36 @@
+.footer-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+    div {
+        margin: 10px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        height: 22px;
+    }
+    div a {
+        color: #696969;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialbtns {
+    display: flex;
+    a,
+    a:hover {
+        text-decoration: none;
+    }
+    img {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 20px;
+        height: auto;
+    }
+}
