@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/logo.PNG';
 import '../../styles/minCss/header.css';
+import { TopMenuItems } from './TopMenuItems';
 
 function Header() {
     return (
@@ -16,21 +17,16 @@ function Header() {
             </div>
 
             <div className="link-wrapper">
-                <div clasclassName="index menu-item active-link">
-                    <Link to="/">Home</Link>
-                </div>
-                <div className="catalog menu-item">
-                    <Link to="/catalog">Catalog</Link>
-                </div>
-                <div className="gallery menu-item">
-                    <Link to="/gallery">Gallery</Link>
-                </div>
-                <div className="about menu-item">
-                    <Link to="/about">Our Story</Link>
-                </div>
-                <div className="contact menu-item">
-                    <Link to="/contact">Contact Us</Link>
-                </div>
+                {TopMenuItems.map((item, index) => {
+                    
+                    const activeLink = window.location.pathname.includes(item.url) ? "active-link" : "";
+                    console.log(window.location.pathname);
+                    return (
+                        <div className={`${item.cName} menuItem ${activeLink}`}>
+                            <Link to={item.url}>{item.title}</Link>
+                        </div>
+                    )
+                })}
             </div>
         </React.Fragment>
     );
