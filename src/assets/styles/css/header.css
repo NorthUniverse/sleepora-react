@@ -29,8 +29,10 @@
     font-size: 1.2em;
     text-transform: uppercase;
     height: 22px; }
-    .link-wrapper divhover {
+    .link-wrapper div:hover {
       border-bottom: 2px solid black; }
+      .link-wrapper div:hover a {
+        color: black; }
   .link-wrapper div a {
     color: #696969;
     text-decoration: none;

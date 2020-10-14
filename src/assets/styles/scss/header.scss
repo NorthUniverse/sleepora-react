@@ -33,8 +33,11 @@
         font-size: 1.2em;
         text-transform: uppercase;
         height: 22px;
-        &hover {
+        &:hover {
             border-bottom: 2px solid black;
+            a {
+                color: black;
+            }
         }
     }
     div a {
