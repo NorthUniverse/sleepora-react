@@ -8,8 +8,8 @@
         text-transform: uppercase;
         height: 22px;
         &:hover {
-            border-bottom: 2px solid black;
             a {
+                border-bottom: 2px solid black;
                 color: black;
             }
         }
@@ -21,6 +21,11 @@
         font-family: "Georgia";
         letter-spacing: 0.5px;
     }
+}
+
+.active-link {
+    border-bottom: 2px solid black;
+    color: black;
 }
 
 .footer {

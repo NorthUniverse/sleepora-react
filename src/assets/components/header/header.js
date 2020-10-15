@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.PNG';
 import '../../styles/minCss/header.css';
 import { TopMenuItems } from './TopMenuItems';
@@ -18,12 +18,9 @@ function Header() {
 
             <div className="link-wrapper">
                 {TopMenuItems.map((item, index) => {
-                    
-                    const activeLink = window.location.pathname.includes(item.url) ? "active-link" : "";
-                    console.log(window.location.pathname);
                     return (
-                        <div className={`${item.cName} menuItem ${activeLink}`}>
-                            <Link to={item.url}>{item.title}</Link>
+                        <div className={`${item.cName} menuItem`}>
+                            <NavLink exact to={item.url} activeClassName="active-link">{item.title}</NavLink>
                         </div>
                     )
                 })}

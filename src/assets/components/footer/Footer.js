@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import facebook from '../../images/socialIcons/Facebook.png';
 import instagram from '../../images/socialIcons/Instagram.png';
 import linkedIn from '../../images/socialIcons/LinkedIn.png';
@@ -8,15 +8,10 @@ import '../../styles/minCss/footer.css';
 function Footer() {
     return (
         <React.Fragment>
-            <div className="link-wrapper">
-                <div className="contact menu-item">
-                    <Link to="/contact">Contact Us</Link>
-                </div>
-            </div>
             <div className="footer">
                 <div className="footer-link-wrapper">
                     <div className="contact">
-                        <Link to="/contact">Contact Us</Link>
+                        <NavLink exact to="/contact" activeClassName="active-link">Contact Us</NavLink>
                     </div>
                 </div>
                 <div className="socialbtns">
