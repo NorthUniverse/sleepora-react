@@ -27,14 +27,10 @@ function Footer() {
                 <div className="socialbtns">
                 {SocialItems.map((socialItem, index) => {
                     const imgSrc = getSocialImageSrc(socialItem.src);
-                    //console.log(imgSrc);
                     return (
                         <img src={ imgSrc } onClick={()=> window.open(`${socialItem.url}`, "_blank")} alt={ socialItem.altTag }/>
                     )
                 })}
-                    {/* <img src={ facebook } onClick={()=> window.open("https://www.facebook.com", "_blank")} alt="Facebook"/>
-                    <img src={ linkedIn } onClick={()=> window.open("https://www.linkedin.com", "_blank")} alt="LinkedIn"/>
-                    <img src={ instagram } onClick={()=> window.open("https://www.instagram.com", "_blank")} alt="Instagram"/> */}
                 </div>
             </div>
         </React.Fragment>
