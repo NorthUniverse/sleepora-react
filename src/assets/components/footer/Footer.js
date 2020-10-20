@@ -25,7 +25,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="socialbtns">
-                {SocialItems.map((socialItem, index) => {
+                {SocialItems.map((socialItem) => {
                     const imgSrc = getSocialImageSrc(socialItem.src);
                     return (
                         <img src={ imgSrc } onClick={()=> window.open(`${socialItem.url}`, "_blank")} alt={ socialItem.altTag }/>
