@@ -7,14 +7,14 @@ import '../../styles/minCss/footer.css';
 import { SocialItems } from './SocialItems';
 
 function Footer() {
-    // funtion getSocialImageSrc(socialItem) {
-    //     switch (socialItem) {
-    //         case 'facebook': return facebook;
-    //         case 'linkedin': return linkedIn;
-    //         case 'instagram': return instagram;
-    //         default: break;
-    //     }
-    // }
+    function getSocialImageSrc(socialItem) {
+        switch (socialItem) {
+            case 'facebook': return facebook;
+            case 'linkedIn': return linkedIn;
+            case 'instagram': return instagram;
+            default: break;
+        }
+    }
 
     return (
         <React.Fragment>
@@ -26,10 +26,10 @@ function Footer() {
                 </div>
                 <div className="socialbtns">
                 {SocialItems.map((socialItem, index) => {
-                    //const imgSrc = getSocialImageSrc(socialItem.src);
+                    const imgSrc = getSocialImageSrc(socialItem.src);
                     //console.log(imgSrc);
                     return (
-                        <img src={ socialItem.src } onClick={()=> window.open(`${socialItem.url}`, "_blank")} alt={ socialItem.altTag }/>
+                        <img src={ imgSrc } onClick={()=> window.open(`${socialItem.url}`, "_blank")} alt={ socialItem.altTag }/>
                     )
                 })}
                     {/* <img src={ facebook } onClick={()=> window.open("https://www.facebook.com", "_blank")} alt="Facebook"/>
