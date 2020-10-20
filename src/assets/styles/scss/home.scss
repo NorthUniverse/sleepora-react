@@ -1,0 +1,26 @@
+.content-wrapper {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.body-home-background-image {
+    img {
+        height: auto;
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2%;
+    }
+}
+
+.body-home-background-image-mobile {
+    display: none;
+}
+
+.body-home-text {
+    font-size: 1.4em;
+    padding: 25px;
+    text-align: center;
+    font-family: "Georgia";
+}
