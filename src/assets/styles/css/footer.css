@@ -26,8 +26,8 @@
 
 .socialbtns {
   display: flex;
-  padding-top: 7px;
-  padding-right: 2vw; }
+  margin: 12px 5% 0 0;
+  justify-content: space-between; }
   .socialbtns img {
     text-decoration: none;
     margin-right: 10px;
