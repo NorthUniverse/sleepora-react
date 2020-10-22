@@ -10,12 +10,12 @@
     .footer-link-wrapper div:hover a {
       border-bottom: 2px solid black;
       color: black; }
-  .footer-link-wrapper div a {
-    color: #696969;
-    text-decoration: none;
-    transition: color 0.2s;
-    font-family: "Georgia";
-    letter-spacing: 0.5px; }
+    .footer-link-wrapper div a {
+      color: #696969;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-family: "Georgia";
+      letter-spacing: 0.5px; }
   .footer-link-wrapper .active-link {
     border-bottom: 2px solid black;
     color: black; }
@@ -24,19 +24,18 @@
   display: flex;
   justify-content: space-between; }
 
-.socialbtns a,
-.socialbtns a:hover {
-  text-decoration: none; }
-
-.socialbtns img {
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  width: 20px;
-  height: auto; }
-
 .socialbtns {
   display: flex; }
+  .socialbtns a {
+    text-decoration: none; }
+    .socialbtns a:hover {
+      text-decoration: none; }
+  .socialbtns img {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 20px;
+    height: auto; }
 
 @media only screen and (min-width: 1000px) {
   .socialbtns {
