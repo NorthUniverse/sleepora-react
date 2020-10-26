@@ -65,16 +65,10 @@ body {
     height: 22px; }
   .link-wrapper > .contact {
     display: none; }
-  .footer-link-wrapper > div a {
-    color: #696969;
-    text-decoration: none;
-    transition: color 0.2s; }
   .link-wrapper > div a {
     color: #696969;
     text-decoration: none;
     transition: color 0.2s; }
-  .footer-link-wrapper > div:hover {
-    border-bottom: 2px solid black; }
   .link-wrapper > div:hover {
     border-bottom: 2px solid black; }
   .active-link {
