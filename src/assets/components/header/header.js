@@ -16,6 +16,18 @@ function Header() {
                 </div>
             </div>
 
+            <div className="mobile-banner">
+                <div className="menu-btn">
+                    <div className="menu-btn-burger"></div>
+                </div>
+                <div className="mobile-banner-text">
+                    Sleepora Mattresses
+                </div>
+                <div className="mobile-banner-image">
+                    <img src= { logo } alt="banner picture"/>
+                </div>
+            </div>
+
             <div className="link-wrapper">
                 {TopMenuItems.map((item, index) => {
                     return (
