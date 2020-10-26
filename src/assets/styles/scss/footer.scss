@@ -1,37 +1,3 @@
-.footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-link-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0% 10%;
-    div {
-        margin: 10px;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        height: 22px;
-        &:hover {
-            a {
-                border-bottom: 2px solid black;
-                color: black;
-            }
-        }
-        a {
-            color: #696969;
-            text-decoration: none;
-            transition: color 0.2s;
-            font-family: "Georgia";
-            letter-spacing: 0.5px;
-        }
-    }
-    .active-link {
-        border-bottom: 2px solid black;
-        color: black;
-    }
-}
-
 .socialbtns {
     display: flex;
     a {
@@ -50,18 +16,54 @@
 }
 
 @media only screen and (min-width: 1000px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-link-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0% 10%;
+        div {
+            margin: 10px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            height: 22px;
+            &:hover {
+                a {
+                    border-bottom: 2px solid black;
+                    color: black;
+                }
+            }
+            a {
+                color: #696969;
+                text-decoration: none;
+                transition: color 0.2s;
+                font-family: "Georgia";
+                letter-spacing: 0.5px;
+            }
+        }
+        .active-link {
+            border-bottom: 2px solid black;
+            color: black;
+        }
+    }
     .socialbtns {
         margin: 12px 5% 0 0;
         justify-content: space-between;
-    }
-    .socialbtns img:hover {
-        transform: scale(1.3);
-        transition: 0.3s;
-        box-shadow: 10px 10px 5px grey;
+        img&:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+            transition: 0.3s;
+            box-shadow: 10px 10px 5px grey;
+        }
     }
 }
 
 @media only screen and (max-width: 999px) {
+    .footer-link-wrapper>.contact {
+        display: none;
+    }
     .socialbtns {
         padding: 3vh 0vh;
         justify-content: space-evenly;

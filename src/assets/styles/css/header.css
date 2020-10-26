@@ -2,10 +2,6 @@
 body {
   margin: 0px; }
 
-.body-home-text {
-  text-align: center;
-  font-family: "Georgia"; }
-
 .display-none {
   display: none; }
 
@@ -41,23 +37,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0% 10%; }
-  .content-wrapper {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey; }
-  .content-wrapper > .body-home-background-image-mobile {
-    display: none; }
-  .footer-link-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0% 10%; }
-  .footer {
-    display: flex;
-    justify-content: space-between; }
-  .footer-link-wrapper > div {
-    margin: 10px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    height: 22px; }
   .link-wrapper > div {
     margin: 10px;
     font-size: 1.2em;
@@ -76,17 +55,7 @@ body {
   .active-link a {
     color: black !important; }
   .link-wrapper > div a:hover {
-    color: black; }
-  .body-home-background-image > img {
-    height: auto;
-    width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2%; }
-  .body-home-text {
-    font-size: 1.4em;
-    padding: 25px; } }
+    color: black; } }
 
 @media only screen and (max-width: 999px) {
   .banner {
@@ -155,19 +124,5 @@ body {
     text-transform: uppercase;
     color: black;
     text-shadow: 2px 2px 5px grey; }
-  .content-wrapper > .body-home-background-image {
-    display: none; }
-  .body-home-background-image-mobile > img {
-    height: 70vh;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    justify-content: center; }
-  .body-home-text {
-    font-size: 1.2em;
-    padding: 1vh; }
-  .footer-link-wrapper > .contact {
-    display: none; }
   .padding-top {
     padding-top: 3vh; } }
