@@ -37,25 +37,25 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0% 10%; }
-  .link-wrapper > div {
-    margin: 10px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    height: 22px; }
-  .link-wrapper > .contact {
-    display: none; }
-  .link-wrapper > div a {
-    color: #696969;
-    text-decoration: none;
-    transition: color 0.2s; }
-  .link-wrapper > div:hover {
-    border-bottom: 2px solid black; }
+    .link-wrapper div {
+      margin: 10px;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      height: 22px; }
+      .link-wrapper div:hover {
+        border-bottom: 2px solid black; }
+    .link-wrapper .contact {
+      display: none; }
+    .link-wrapper div a {
+      color: #696969;
+      text-decoration: none;
+      transition: color 0.2s; }
+      .link-wrapper div a:hover {
+        color: black; }
   .active-link {
     border-bottom: 2px solid black; }
   .active-link a {
-    color: black !important; }
-  .link-wrapper > div a:hover {
-    color: black; } }
+    color: black !important; } }
 
 @media only screen and (max-width: 999px) {
   .banner {

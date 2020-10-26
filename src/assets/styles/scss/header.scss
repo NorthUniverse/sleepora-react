@@ -47,32 +47,32 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 0% 10%;
-    }
-    .link-wrapper>div {
-        margin: 10px;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        height: 22px;
-    }
-    .link-wrapper>.contact {
-        display: none;
-    }
-    .link-wrapper>div a {
-        color: #696969;
-        text-decoration: none;
-        transition: color 0.2s;
-    }
-    .link-wrapper>div:hover {
-        border-bottom: 2px solid black;
+        div {
+            margin: 10px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            height: 22px;
+            &:hover {
+                border-bottom: 2px solid black;
+            }
+        }
+        .contact {
+            display: none;
+        }
+        div a {
+            color: #696969;
+            text-decoration: none;
+            transition: color 0.2s;
+            &:hover {
+                color: black;
+            }
+        }
     }
     .active-link {
         border-bottom: 2px solid black;
     }
     .active-link a {
         color: black !important;
-    }
-    .link-wrapper>div a:hover {
-        color: black;
     }
 }
 
