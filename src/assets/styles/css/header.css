@@ -50,10 +50,10 @@ body {
       text-decoration: none;
       transition: color 0.2s; }
       .link-wrapper div a:hover {
-        color: black; }
+        color: black;
+        border-bottom: 2px solid black; }
   .active-link {
-    border-bottom: 2px solid black; }
-  .active-link a {
+    border-bottom: 2px solid black;
     color: black !important; } }
 
 @media only screen and (max-width: 999px) {
