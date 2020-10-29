@@ -9,10 +9,12 @@ function Header() {
         <React.Fragment>
             <div className="banner">
                 <div className="banner-image">
-                    <img src= { logo } alt="banner picture"/>
+                    <NavLink exact to="/">
+                        <img src= { logo } alt="banner picture"/>
+                    </NavLink>
                 </div>
                 <div className="banner-text">
-                    Sleepora Mattresses
+                        Sleepora Mattresses
                 </div>
             </div>
 
