@@ -33,6 +33,11 @@ body {
         align-items: center;
         padding: 7% 0% 7% 0%;
         font-weight: normal;
+        a {
+            text-decoration: none;
+            font-family: "Cooper Black", "Georgia";
+            color: black;
+        }
     }
     .mobile-banner {
         display: none;

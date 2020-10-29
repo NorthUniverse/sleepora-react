@@ -14,7 +14,10 @@ function Header() {
                     </NavLink>
                 </div>
                 <div className="banner-text">
+                    <NavLink exact to="/">
                         Sleepora Mattresses
+                    </NavLink>
+                        {/* Sleepora Mattresses */}
                 </div>
             </div>
 
