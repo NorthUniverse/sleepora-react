@@ -17,7 +17,6 @@ function Header() {
                     <NavLink exact to="/">
                         Sleepora Mattresses
                     </NavLink>
-                        {/* Sleepora Mattresses */}
                 </div>
             </div>
 
