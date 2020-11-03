@@ -17,10 +17,10 @@ body {
         padding: 1.5% 25% 0% 25%;
     }
     .banner-image {
-        display: flex;
         height: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
         img {
-            align-items: center;
             height: 100px;
             width: auto;
             margin: auto;
