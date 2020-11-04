@@ -116,6 +116,8 @@ body {
     background-color: lightgrey;
     height: 15vh;
     border-bottom: 1px solid darkgrey; }
+  .hide-menu {
+    display: none; }
   .each-menu-item {
     display: grid;
     grid-template-columns: 1fr;

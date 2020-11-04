@@ -3,8 +3,16 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.PNG';
 import '../../styles/minCss/header.css';
 import { TopMenuItems } from './TopMenuItems';
+import { useEffect, useState } from 'react'
 
 function Header() {
+  const mobileMenuDisplayFlag = false
+  const [headerLinkClassName, setLinkClassName] = useState()
+
+  useEffect(() => {
+    setLinkClassName(mobileMenuDisplayFlag ? `link-wrapper` : `link-wrapper hide-menu`);
+  })
+
     return (
         <React.Fragment>
             <div className="banner">
@@ -32,7 +40,7 @@ function Header() {
                 </div>
             </div>
 
-            <div className="link-wrapper">
+            <div className={`${headerLinkClassName}`}>
                 {TopMenuItems.map((item, index) => {
                     return (
                         <div className={`${item.cName}`}>
