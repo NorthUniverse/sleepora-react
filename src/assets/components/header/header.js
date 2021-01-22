@@ -6,12 +6,7 @@ import { TopMenuItems } from './TopMenuItems';
 import { useEffect, useState } from 'react'
 
 function Header() {
-  const mobileMenuDisplayFlag = false
-  const [headerLinkClassName, setLinkClassName] = useState()
-
-  useEffect(() => {
-    setLinkClassName(mobileMenuDisplayFlag ? `link-wrapper` : `link-wrapper hide-menu`);
-  })
+    let [toggleMobileMenu, setMobileMenuDisplay] = useState(window.innerWidth < 1000 ? false : true) 
 
     return (
         <React.Fragment>
@@ -29,7 +24,7 @@ function Header() {
             </div>
 
             <div className="mobile-banner">
-                <div className="menu-btn">
+                <div className="menu-btn" onClick={() => setMobileMenuDisplay(!toggleMobileMenu)}>
                     <div className="menu-btn-burger"></div>
                 </div>
                 <div className="mobile-banner-text">
@@ -40,7 +35,7 @@ function Header() {
                 </div>
             </div>
 
-            <div className={`${headerLinkClassName}`}>
+            { toggleMobileMenu ? (<div className="link-wrapper">
                 {TopMenuItems.map((item, index) => {
                     return (
                         <div className={`${item.cName}`}>
@@ -48,7 +43,7 @@ function Header() {
                         </div>
                     )
                 })}
-            </div>
+            </div>) : null }
         </React.Fragment>
     );
 }
