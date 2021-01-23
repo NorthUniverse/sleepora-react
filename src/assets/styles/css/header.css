@@ -89,6 +89,8 @@ body {
     transform: translate(-15px, -10px); }
   .menu-btn-burger::after {
     transform: translate(-15px, 10px); }
+  .menu-btn.open {
+    transform: translate(-15px, 0); }
   .menu-btn.open .menu-btn-burger {
     background: transparent; }
   .menu-btn.open .menu-btn-burger::before {

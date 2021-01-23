@@ -24,7 +24,7 @@ function Header() {
             </div>
 
             <div className="mobile-banner">
-                <div className="menu-btn" onClick={() => setMobileMenuDisplay(!toggleMobileMenu)}>
+                <div className={toggleMobileMenu ? "menu-btn open" : "menu-btn"} onClick={() => setMobileMenuDisplay(!toggleMobileMenu)}>
                     <div className="menu-btn-burger"></div>
                 </div>
                 <div className="mobile-banner-text">
