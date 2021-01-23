@@ -91,21 +91,21 @@ body {
     transform: translate(-15px, 10px); }
   .menu-btn.open {
     transform: translate(-15px, 0); }
-  .menu-btn.open .menu-btn-burger {
-    background: transparent; }
-  .menu-btn.open .menu-btn-burger::before {
-    transform: rotate(45deg); }
-  .menu-btn.open .menu-btn-burger::after {
-    transform: rotate(-45deg); }
-  .mobile-banner-image > img {
-    align-items: center;
-    height: 50px;
-    width: auto;
-    margin: auto; }
+    .menu-btn.open .menu-btn-burger {
+      background: transparent; }
+    .menu-btn.open .menu-btn-burger::before {
+      transform: rotate(45deg); }
+    .menu-btn.open .menu-btn-burger::after {
+      transform: rotate(-45deg); }
   .mobile-banner-image {
     display: flex;
     width: 100%;
     margin: 0px; }
+    .mobile-banner-image img {
+      align-items: center;
+      height: 50px;
+      width: auto;
+      margin: auto; }
   .mobile-banner-text {
     text-align: center;
     font-size: 1.35em;
