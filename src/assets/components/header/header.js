@@ -38,8 +38,8 @@ function Header() {
             { toggleMobileMenu ? (<div className="link-wrapper">
                 {TopMenuItems.map((item, index) => {
                     return (
-                        <div className={`${item.cName}`}>
-                            <NavLink exact to={item.url} activeClassName="active-link">{item.title}</NavLink>
+                        <div className={`${item.cName} mobile-menu-styles`}>
+                            <NavLink exact to={item.url} activeClassName="active-link" className="each-menu-item">{item.title}</NavLink>
                         </div>
                     )
                 })}
