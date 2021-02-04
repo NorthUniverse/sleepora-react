@@ -18,7 +18,7 @@ function Header() {
                 </div>
                 <div className="banner-text">
                     <NavLink exact to="/">
-                        Sleepora Mattresses
+                        Sleepora Mattresses1
                     </NavLink>
                 </div>
             </div>
@@ -28,7 +28,7 @@ function Header() {
                     <div className="menu-btn-burger"></div>
                 </div>
                 <div className="mobile-banner-text">
-                    Sleepora Mattresses
+                    Sleepora Mattresses1
                 </div>
                 <div className="mobile-banner-image">
                     <img src= { logo } alt="banner picture"/>
