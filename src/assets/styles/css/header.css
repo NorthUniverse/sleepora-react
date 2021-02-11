@@ -115,12 +115,12 @@ body {
   .mobile-menu-styles {
     text-align: center;
     background-color: lightgrey;
-    height: 15vh;
+    height: 18.2vh;
     border-bottom: 1px solid darkgrey; }
   .each-menu-item {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 6vh;
+    padding-top: 8vh;
     text-decoration: none;
     font-family: Georgia, serif;
     font-size: 1.2em;
