@@ -39,7 +39,7 @@ function Header() {
                 {TopMenuItems.map((item, index) => {
                     return (
                         <div className={`${item.cName} mobile-menu-styles`}>
-                            <NavLink exact to={item.url} activeClassName="active-link" className="each-menu-item">{item.title}</NavLink>
+                            <NavLink exact to={item.url} activeClassName="active-link" className="each-menu-item" onClick={() => setMobileMenuDisplay(!toggleMobileMenu)}>{item.title} </NavLink>
                         </div>
                     )
                 })}
