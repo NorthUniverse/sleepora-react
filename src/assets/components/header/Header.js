@@ -12,12 +12,12 @@ function Header() {
         <React.Fragment>
             <div className="banner">
                 <div className="banner-image">
-                    <NavLink exact to="/">
+                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(true)}>
                         <img src= { logo } alt="banner picture"/>
                     </NavLink>
                 </div>
                 <div className="banner-text">
-                    <NavLink exact to="/">
+                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(true)}>
                         Sleepora Mattresses
                     </NavLink>
                 </div>
