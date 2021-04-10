@@ -138,12 +138,16 @@ body {
         }
     }
     .mobile-banner-text {
-        text-align: center;
-        font-size: 1.35em;
-        font-family: "Cooper Black", "Georgia";
-        align-items: center;
         padding: 7% 0% 7% 0%;
-        font-weight: normal;
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.35em;
+            font-family: "Cooper Black", "Georgia";
+            align-items: center;
+            font-weight: normal;
+            color: black;
+        }
     }
     .mobile-menu-styles {
         text-align: center;
