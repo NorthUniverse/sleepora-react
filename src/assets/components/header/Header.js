@@ -6,18 +6,19 @@ import { TopMenuItems } from './TopMenuItems';
 import { useEffect, useState } from 'react'
 
 function Header() {
-    let [toggleMobileMenu, setMobileMenuDisplay] = useState(window.innerWidth < 1000 ? false : true) 
+    let isDesktopView = window.innerWidth > 1000 ? true : false
+    let [toggleMobileMenu, setMobileMenuDisplay] = useState(isDesktopView) 
 
     return (
         <React.Fragment>
             <div className="banner">
                 <div className="banner-image">
-                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(true)}>
+                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(isDesktopView)}>
                         <img src= { logo } alt="banner picture"/>
                     </NavLink>
                 </div>
                 <div className="banner-text">
-                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(true)}>
+                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(isDesktopView)}>
                         Sleepora Mattresses
                     </NavLink>
                 </div>
@@ -39,7 +40,7 @@ function Header() {
                 {TopMenuItems.map((item, index) => {
                     return (
                         <div className={`${item.cName} mobile-menu-styles`}>
-                            <NavLink exact to={item.url} activeClassName="active-link" className="each-menu-item" onClick={() => setMobileMenuDisplay(!toggleMobileMenu)}>{item.title} </NavLink>
+                            <NavLink exact to={item.url} activeClassName="active-link" className="each-menu-item" onClick={() => setMobileMenuDisplay(isDesktopView ? true : !toggleMobileMenu)}>{item.title} </NavLink>
                         </div>
                     )
                 })}
