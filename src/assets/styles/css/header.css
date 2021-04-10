@@ -103,6 +103,7 @@ body {
     .mobile-banner-image img {
       align-items: center;
       height: 50px;
+      padding-top: 3px;
       width: auto;
       margin: auto; }
   .mobile-banner-text {
