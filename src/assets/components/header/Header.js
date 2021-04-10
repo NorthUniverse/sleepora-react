@@ -29,10 +29,14 @@ function Header() {
                     <div className="menu-btn-burger"></div>
                 </div>
                 <div className="mobile-banner-text">
-                    Sleepora Mattresses
+                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(false)}>
+                        Sleepora Mattresses
+                    </NavLink>
                 </div>
                 <div className="mobile-banner-image">
-                    <img src= { logo } alt="banner picture"/>
+                    <NavLink exact to="/" onClick={() => setMobileMenuDisplay(false)}>
+                        <img src= { logo } alt="banner picture"/>
+                    </NavLink>
                 </div>
             </div>
 
