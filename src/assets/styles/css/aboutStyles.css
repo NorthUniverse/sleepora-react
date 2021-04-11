@@ -1,4 +1,4 @@
-.body-about-background-image > img {
+.body-about-background-image img {
   height: auto; }
 
 .body-about-text {
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center; }
-  .body-about-background-image > img {
+  .body-about-background-image img {
     width: 600px;
     height: auto;
     padding: 3%; }
@@ -24,7 +24,7 @@
     padding: 3%; } }
 
 @media only screen and (max-width: 999px) {
-  .body-about-background-image > img {
+  .body-about-background-image img {
     width: 100vw;
     height: auto; }
   .body-about-text {
