@@ -1,6 +1,7 @@
 import React from 'react';
-import homeImage from '../../images/home.jpg';
-import mobileHomeImage from '../../images/gallery/gallery7.jpg';
+import contactImage from '../../images/contact.jpg';
+import mobileContactImage from '../../images/mobile-contact.jpg';
+import '../../styles/minCss/contactStyles.css';
 
 function Contact() {
     return (
@@ -8,10 +9,10 @@ function Contact() {
             <div className="content-wrapper">
                 <div className="body-contact-wrapper">
                     <div className="body-contact-background-image">
-                        <img src="images/contact.jpg" alt="bed picture"/>
+                        <img src={ contactImage } alt="bed picture"/>
                     </div>
                     <div className="body-contact-background-image-mobile">
-                        <img src="images/mobile-contact.jpg" alt="bed picture mobile"/>
+                        <img src={ mobileContactImage } alt="bed picture mobile"/>
                     </div>
                     <div className="body-contact-text">
                         <div className="heading-wrapper">

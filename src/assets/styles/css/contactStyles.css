@@ -1,0 +1,47 @@
+.body-contact-wrapper {
+  position: relative;
+  width: 100%; }
+
+.heading-wrapper {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: -0.6em; }
+
+.body-contact-text {
+  position: absolute;
+  text-align: center;
+  font-family: "Georgia";
+  top: 60%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%); }
+
+@media only screen and (min-width: 1000px) {
+  .body-contact-background-image img {
+    opacity: 0.5;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .body-contact-wrapper {
+    padding: 3%; }
+  .body-contact-text {
+    padding: 0px 0px 130px 0px; }
+  .body-contact-background-image-mobile {
+    display: none; } }
+
+@media only screen and (max-width: 999px) {
+  .body-contact-background-image {
+    display: none; }
+  .body-contact-background-image-mobile img {
+    opacity: 0.4;
+    height: 80vh;
+    width: 100%;
+    display: block; }
+  .body-contact-text {
+    padding: 0px 0px 140px 0px; }
+  .heading-wrapper {
+    padding-top: 2vh; }
+  .contact-image-lighten {
+    transition: 1s;
+    opacity: 0.5; } }
