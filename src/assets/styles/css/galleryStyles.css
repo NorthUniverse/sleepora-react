@@ -1,0 +1,66 @@
+.gallery-items-wrapper {
+  display: grid; }
+
+.gallery-each-item {
+  position: relative;
+  border: 1px solid #848484; }
+
+.gallery-image-wrapper > img {
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  justify-content: center; }
+
+.gallery-image-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  padding-left: 10%; }
+
+@media only screen and (min-width: 1000px) {
+  .mobile-content-header {
+    display: none; }
+  .gallery-items-wrapper {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .gallery-each-item {
+    padding: 10%;
+    margin: 10%;
+    box-shadow: 5px 5px 2px grey; }
+  .gallery-image-wrapper > img {
+    height: 240px; }
+  .gallery-image-darken {
+    transition: 0.9s;
+    filter: brightness(20%); }
+  .gallery-image-text-focussed {
+    transition: 1s;
+    font-size: 1.5em;
+    font-family: "Georgia";
+    color: lightseagreen;
+    text-decoration: none; }
+  .gallery-each-item-focus {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 10px 10px 7px grey; } }
+
+@media only screen and (max-width: 999px) {
+  .mobile-content-header {
+    text-align: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-family: "Georgia";
+    padding: 1vh;
+    font-weight: bold; }
+  .gallery-items-wrapper {
+    grid-template-columns: 1fr 1fr; }
+  .gallery-each-item {
+    padding: 2vw;
+    margin: 2vw;
+    box-shadow: 2px 2px 2px grey; }
+  .gallery-image-wrapper > img {
+    height: 130px; } }
