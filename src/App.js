@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import SimpleReactLightbox from "simple-react-lightbox";
 
 //components
 import Header from './assets/components/header/Header';
@@ -16,11 +17,13 @@ function App() {
     <Router>
       <div className="App">
         <Header/>
+        <SimpleReactLightbox>
         <Route exact path='/' component={Home}/>
         <Route exact path='/catalog' component={Catalog}/>
         <Route exact path='/gallery' component={Gallery}/>
         <Route exact path='/about' component={About}/>
         <Route exact path='/contact' component={Contact}/>
+        </SimpleReactLightbox>
         <Footer/>
       </div>
     </Router>
