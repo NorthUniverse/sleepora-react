@@ -1,8 +1,6 @@
 import React from 'react';
 import { GalleryItems } from './GalleryItems.js';
-import { NavLink } from 'react-router-dom';
 import '../../styles/minCss/galleryStyles.css';
-
 import { SRLWrapper } from "simple-react-lightbox";
 
 function Gallery() {
