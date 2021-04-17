@@ -2,50 +2,50 @@ const { default: Gallery } = require("../body/Gallery");
 
 export const GalleryItems = [{
         imgName: 'gallery1',
-        alt: 'first'
+        alt: 'First'
     },
     {
         imgName: 'gallery2',
-        alt: 'second'
+        alt: 'Second'
     },
     {
         imgName: 'gallery3',
-        alt: 'third'
+        alt: 'Third'
     },
     {
         imgName: 'gallery4',
-        alt: 'forth'
+        alt: 'Forth'
     },
     {
         imgName: 'gallery5',
-        alt: 'fifth'
+        alt: 'Fifth'
     },
     {
         imgName: 'gallery6',
-        alt: 'sixth'
+        alt: 'Sixth'
     },
     {
         imgName: 'gallery7',
-        alt: 'seventh'
+        alt: 'Seventh'
     },
     {
         imgName: 'gallery8',
-        alt: 'eigth'
+        alt: 'Eigth'
     },
     {
         imgName: 'gallery9',
-        alt: 'ninth'
+        alt: 'Ninth'
     },
     {
         imgName: 'gallery10',
-        alt: 'tenth'
+        alt: 'Tenth'
     },
     {
         imgName: 'gallery11',
-        alt: 'eleventh'
+        alt: 'Eleventh'
     },
     {
         imgName: 'gallery12',
-        alt: 'twelvth'
+        alt: 'Twelvth'
     }
 ]

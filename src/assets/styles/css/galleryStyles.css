@@ -29,20 +29,14 @@
   .gallery-items-wrapper {
     grid-template-columns: 1fr 1fr 1fr; }
   .gallery-each-item {
-    padding: 10%;
-    margin: 10%;
-    box-shadow: 5px 5px 2px grey; }
-  .gallery-image-wrapper > img {
+    margin: 20%;
+    border: none; }
+    .gallery-each-item :hover {
+      transform: scale(1.2);
+      transition: 1s;
+      box-shadow: 11px 11px 8px grey; }
+  .gallery-image-wrapper img {
     height: 240px; }
-  .gallery-image-darken {
-    transition: 0.9s;
-    filter: brightness(20%); }
-  .gallery-image-text-focussed {
-    transition: 1s;
-    font-size: 1.5em;
-    font-family: "Georgia";
-    color: lightseagreen;
-    text-decoration: none; }
   .gallery-each-item-focus {
     transform: scale(1.1);
     transition: 1s;
