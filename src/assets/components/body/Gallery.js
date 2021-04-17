@@ -4,8 +4,6 @@ import '../../styles/minCss/galleryStyles.css';
 import { SRLWrapper } from "simple-react-lightbox";
 
 function Gallery() {
-    const imagePath = '../../images/gallery/';
-
     return (
         <React.Fragment>
             <div className="content-wrapper">
