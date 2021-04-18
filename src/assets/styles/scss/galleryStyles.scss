@@ -41,15 +41,15 @@
         padding: 10%;
         box-shadow: 5px 5px 2px grey;
         position: relative;
-    }
-    .gallery-each-item:hover {
-        cursor: pointer;
-        position: relative;
-        padding: 10%;
-        margin: 10%;
-        box-shadow: 10px 10px 7px grey;
-        transform: scale(1.1);
-        transition: 1s;
+        &:hover {
+            cursor: pointer;
+            position: relative;
+            padding: 10%;
+            margin: 10%;
+            box-shadow: 10px 10px 7px grey;
+            transform: scale(1.1);
+            transition: 1s;
+        }
     }
 }
 
