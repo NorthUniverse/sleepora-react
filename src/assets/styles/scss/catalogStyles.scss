@@ -32,17 +32,17 @@
         position: relative;
         margin: 5% 10%;
         box-shadow: 5px 5px 2px grey;
-    }
-    .catalog-each-item:hover {
-        position: relative;
-        padding: 5%;
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        box-shadow: 10px 10px 7px grey;
-        transform: scale(1.1);
-        transition: 1s;
+        &:hover {
+            position: relative;
+            padding: 5%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            box-shadow: 10px 10px 7px grey;
+            transform: scale(1.1);
+            transition: 1s;
+        }
     }
     .catalog-image-wrapper>img {
         height: 250px;
