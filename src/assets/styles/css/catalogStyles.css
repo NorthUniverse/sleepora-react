@@ -25,7 +25,8 @@
     height: 300px;
     position: relative;
     margin: 5% 10%;
-    box-shadow: 5px 5px 2px grey; }
+    box-shadow: 5px 5px 2px grey;
+    text-decoration: none; }
     .catalog-each-item:hover {
       cursor: pointer;
       position: relative;
