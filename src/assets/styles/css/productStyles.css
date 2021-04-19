@@ -1,4 +1,4 @@
-.body-product-image > img {
+.body-product-image img {
   width: 100%; }
 
 .product-name {
@@ -8,6 +8,7 @@
   font-size: 1.2em; }
 
 .product-details-content {
+  text-align: left;
   font-family: "Georgia"; }
 
 @media only screen and (min-width: 1000px) {
@@ -15,7 +16,7 @@
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     padding: 2%; }
-  .body-product-image > img {
+  .body-product-image img {
     height: 500px;
     object-fit: cover;
     background-size: cover;

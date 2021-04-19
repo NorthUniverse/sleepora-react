@@ -1,5 +1,7 @@
-.body-product-image>img {
-    width: 100%;
+.body-product-image {
+    img {
+        width: 100%
+    }
 }
 
 .product-name {
@@ -10,6 +12,7 @@
 }
 
 .product-details-content {
+    text-align: left;
     font-family: "Georgia";
 }
 
@@ -19,12 +22,14 @@
         grid-template-columns: 1.4fr 1fr;
         padding: 2%;
     }
-    .body-product-image>img {
-        height: 500px;
-        object-fit: cover;
-        background-size: cover;
-        background-position: center;
-        justify-content: center;
+    .body-product-image {
+        img {
+            height: 500px;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+        }
     }
     .product-details-content {
         align-self: center;
