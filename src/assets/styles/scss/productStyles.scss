@@ -1,0 +1,56 @@
+.body-product-image>img {
+    width: 100%;
+}
+
+.product-name {
+    text-align: center;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product-details-content {
+    font-family: "Georgia";
+}
+
+@media only screen and (min-width: 1000px) {
+    .body-product {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        padding: 2%;
+    }
+    .body-product-image>img {
+        height: 500px;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+    }
+    .product-details-content {
+        align-self: center;
+        padding: 0% 0% 0% 12%;
+    }
+    li {
+        margin: 5px 0;
+    }
+    .body-product-details {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    li {
+        margin: 5px 0;
+        padding: 0vw 2vw;
+    }
+    .body-product-details {
+        padding: 11% 0%;
+    }
+    .product-details-content {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

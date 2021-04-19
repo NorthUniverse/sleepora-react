@@ -1,12 +1,10 @@
 import React from 'react';
-import { useLocation } from "react-router-dom";
+import { CatalogItems } from '../CatalogItems';
+import Product from './Product';
 
 function Wave() {
-    return (
-        <React.Fragment>
-            <div className="content-wrapper"></div>
-        </React.Fragment>
-    );
+    let mattressObject = CatalogItems.filter(mattress => mattress.name.includes('Wave'))[0];
+    return <Product mattressObjectProps = { mattressObject }/>;
 }
 
 export default Wave;
