@@ -13,19 +13,14 @@ function Catalog() {
                             CatalogItems.map((item, index) => {
                                 const imgPath = require('../../images/catalog/' + item.name + '.jpg');
                                 let mattressName = item.name;
+                                let componentName = item.name
                                 if(mattressName.includes("-")) {
                                     let mattressArray = mattressName.split("-");
                                     mattressName = mattressArray[0] + " " + mattressArray[1];
+                                    componentName = mattressArray[0] + mattressArray[1];
                                 }
                                 return(
-                                    <NavLink exact to={{
-                                        pathname: "/catalog/" + item.name,
-                                        productProps: {
-                                            name: item.name,
-                                            typeName: item.typeName,
-                                            description: item.description
-                                        }
-                                        }} className="catalog-each-item">
+                                    <NavLink exact to={ "/catalog/" + componentName } className="catalog-each-item">
                                         <div className="catalog-image-wrapper">
                                             <img src = { imgPath } alt={ mattressName + ` Mattress`}/>
                                         </div>
