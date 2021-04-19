@@ -1,6 +1,7 @@
 import React from 'react';
 import { CatalogItems } from './CatalogItems.js';
 import '../../styles/minCss/catalogStyles.css';
+import { NavLink } from 'react-router-dom';
 
 function Catalog() {
     return (
@@ -17,12 +18,19 @@ function Catalog() {
                                     mattressName = mattressArray[0] + " " + mattressArray[1];
                                 }
                                 return(
-                                    <div className="catalog-each-item">
+                                    <NavLink exact to={{
+                                        pathname: "/catalog/" + item.name,
+                                        productProps: {
+                                            name: item.name,
+                                            typeName: item.typeName,
+                                            description: item.description
+                                        }
+                                        }} className="catalog-each-item">
                                         <div className="catalog-image-wrapper">
                                             <img src = { imgPath } alt={ mattressName + ` Mattress`}/>
                                         </div>
                                         <div className="catalog-image-text-wrapper">{mattressName + ` Mattress`}</div>
-                                    </div>
+                                    </NavLink>
                                 )
                             })
                         }
